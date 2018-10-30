@@ -42,28 +42,29 @@
   </head>
 
   <body>
-
-       <nav  class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#jumbotron">TRYPSTR</a>
+    <header id="header">
+      <nav  id="nav-bar" class="navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#jumbotron"><img id="header-img" src="images/trypLogo.png"></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li ><a href="#jumbotron" class="nav-link"> Sign up </a></li>
+              <li ><a href="#who" class="nav-link">About</a></li>
+              <li ><a href="#get-involved" class="nav-link"> Features</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            
-            <li ><a href="#who"> About app</a></li>
-            <li ><a href="#get-involved"> Sign up </a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
+      </nav>
+    </header>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="jumbotron" class="jumbotron">
@@ -73,22 +74,31 @@
          </h1>
         <p>All over the world people are having amazing trips. Millions of photos are being taken. With 
           all these beautiful sights and sounds, our plan is to see those
-          photos get to 1 Trillion </p>
-        <p><a class="btn btn-danger btn-lg" href="#who" role="button">Sign up</a></p>
-     
+          photos get to 1 Trillion. </p>
+
+          <form method="POST" action="https://www.freecodecamp.com/email-submit" id="form">
+            <p> <input type="email" placeholder="Enter your email address" id="email" name="email"> </p>
+            <p><input type="submit" class="btn btn-danger btn-lg" role="button" value="Sign up"></p>
+          </form>
       </div>
     </div>
     
     <div id="who">
-    <div class="container homepage">
-        <img class="img-responsive" src="https://cdn.pixabay.com/photo/2015/07/29/00/08/photographer-865295_960_720.jpg" 
-        alt="taking photos" title="Adventure">
-        <h2>TRYPSTR</h2>
-        <hr>
-        <P>Trypstr<a href="#" target="_blank">.</a> We aim to show you all your photos according to location
-        and make them look stunning</P>
-        
-    </div>
+      <div class="container homepage">
+          <h2>TRYPSTR</h2>
+          <hr>
+          <P>Trypstr<a href="#" target="_blank">.</a> We aim to show you all your photos according to location
+            and make them look stunning
+          </P>
+          <img class="img-responsive" src="https://cdn.pixabay.com/photo/2015/07/29/00/08/photographer-865295_960_720.jpg" 
+          alt="taking photos" title="Adventure">
+          <hr>
+          <div>
+            <iframe id="video" src="https://www.youtube.com/embed/MeTQplAmuTU" 
+            frameborder="0" allowfullscreen></iframe>
+          </div>
+          
+      </div>
     </div>
 
     <div id="get-involved">
