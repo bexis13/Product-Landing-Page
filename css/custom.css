@@ -27,14 +27,21 @@ ul.nav, .jumbotron h1
 	font-size: 80px;
 
 }
-img{
-	width: 45%;
-	height: auto;
-	margin: auto;
+.navbar-brand{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+#header-img{
+	width: 55%;
+	height: auto;
+}
+
 iframe {
-	 width:45%; 
-	 height: 380px;
+	 /*width:45%; 
+	 height: 380px;*/
+}
+.flex-container{
+	display: flex;
 }
 .btn-lg 
 {
@@ -97,7 +104,7 @@ ul.nav
 }
  
  footer {
- 	background-color: #f74c3c;
+ 	background-color: dodgerBlue;
  	padding-top: 150px;
  	padding-bottom: 30px;
  	color: white;
@@ -111,6 +118,10 @@ ul.nav
  		font-size: 56px;
  		margin-bottom: 30px;
  	}
+	 iframe {
+	 width:45%; 
+	 height: 240px;
+	}
 }
 
 @media (max-width:991px) {
@@ -124,6 +135,10 @@ ul.nav
  		padding-top: 20px;
  		padding-bottom: 20px;
  	}
+	 iframe {
+	 width:45%; 
+	 height: 180px;
+	}
 }
 
 @media (max-width:767px) {
