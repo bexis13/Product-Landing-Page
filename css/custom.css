@@ -16,7 +16,9 @@ ul.nav, .jumbotron h1
 {
 	text-align: center;
 	color: white;
-	background-image: url('../images/background.jpg')
+	background-image: url('https://cdn.pixabay.com/photo/2015/04/23/21/59/hot-air-balloon-736879_960_720.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .jumbotron i{
@@ -24,6 +26,11 @@ ul.nav, .jumbotron h1
 	margin-right: auto;
 	font-size: 80px;
 
+}
+img{
+	width: 45%;
+	height: auto;
+	margin: auto;
 }
 .btn-lg 
 {
